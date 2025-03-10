@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>台中市景點推薦</title>
+	<title>台中市景點推薦網</title>
 	<style>
 		#container { margin: 0 auto; width: 1024px;}
 		td { text-align: center; padding: 10px;}
@@ -13,18 +13,49 @@
 		.large_font { font-size: 50px;}
 		.large_font_1 { font-size: 30px;}
 		.large_font_1:hover { background-color: skyblue; color: white;}
+		.map {border-radius: 10px; width: 900px; height: 600px;}
+		body {margin:0;}
+		.navbar {
+		overflow: hidden;
+		background-color: #333;
+		position: fixed;
+		top: 0;
+		width: 100%;
+		}
+		.navbar a {
+		float: left;
+		display: block;
+		color: #f2f2f2;
+		text-align: center;
+		padding: 14px 16px;
+		text-decoration: none;
+		font-size: 17px;
+		}
+		.navbar a:hover {
+		background: #ddd;
+		color: black;
+		}
 	</style>
 </head>
 <body>
+
+<div class="navbar">
+	<a href="#home">回首頁</a>
+	<a href="#s1">台中國家歌劇院</a>
+	<a href="#s2">台中州廳</a>
+	<a href="#s3">審計新村</a>
+</div>
+
+
 <div id="container">
 <table>
 	<tr>
-		<td colspan="2">
+		<td id="home" colspan="2">
 			<p class="large_font">
 				<font>台中市景點推薦</font>
 			</p>
 			<p>
-				<img src="00.jpeg" class="r_img_1">
+				<iframe frameborder="0" src="slideshow.html" width="640"; height="380";></iframe>
 			</p>
 		</td>
 	</tr>
@@ -36,7 +67,7 @@
 	</tr>
 	<tr>
 		<td>
-			<img src="01.jpeg" class="r_img">
+			<img id="s1" src="01.jpeg" class="r_img">
 			<p>&#128316 台中國家歌劇院白天景色</p>
 		</td>
 		<td>
@@ -52,13 +83,13 @@
 			<p>所在位置：台中市西區民權路99號</p>
 		</td>
 		<td>
-			<img src="02.jpeg" class="r_img">
+			<img id="s2" src="02.jpeg" class="r_img">
 			<p>&#128316 臺中州廳</p>
 		</td>
 	</tr>
 	<tr>
 		<td>
-			<img src="03.jpeg" class="r_img">
+			<img id="s3" src="03.jpeg" class="r_img">
 			<p>&#128316 審計新村</p>
 		</td>
 		<td>
@@ -68,11 +99,18 @@
 		</td>
 	</tr>
 	<tr>
+		<td colspan="2">
+			<iframe frameborder="0" src="https://www.google.com/maps/d/u/0/embed?mid=1AR4N-iA5TAHa1hoN-6UDhynsbO_bN4k&ehbc=2E312F" 
+			class="map"></iframe>
+		</td>
+	</tr>
+	<tr>
 		<td colspan="2" style="background-color: rgb(117, 200, 186); color: white;">
 			<p><font>網頁製作: 盧柏安</font></p>
 		</td>
 	</tr>
 </table>
 </div>
+
 </body>
 </html>
